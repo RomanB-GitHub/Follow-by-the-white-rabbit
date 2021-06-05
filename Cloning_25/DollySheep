@@ -1,0 +1,17 @@
+public class DollySheep implements Cloneable {
+  private String name;
+  private HeadDolly head = new HeadDolly(); // если указываешь обьект то нужно в его класе implements of Clonable
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+}
