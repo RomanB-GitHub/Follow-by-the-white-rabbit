@@ -1,0 +1,22 @@
+public class MainDollyTest {
+    public static void main(String[] args) {
+
+
+        DollySheep dollySheep = new DollySheep();
+        DollySheep dollySheep2 = foo(dollySheep);
+
+        dollySheep.setName("Dolly");
+        dollySheep2.setName("Prakelasa");
+
+        System.out.println(dollySheep.getName() + " , " + dollySheep2.getName());
+    }
+    public static DollySheep foo(DollySheep dollySheep2){
+        DollySheep sheep = null;
+
+        try {
+             sheep = (DollySheep) dollySheep2.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        return sheep;
+    }
