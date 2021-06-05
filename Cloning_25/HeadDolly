@@ -1,0 +1,6 @@
+public class  HeadDolly implements Cloneable{
+    /*
+    Здесь мы имплементируемся от интерфейса Clonable
+    так как эсть обьект в классе DollySheep
+     */
+}
